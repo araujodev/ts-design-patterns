@@ -1,3 +1,4 @@
+import { Auto } from "./insurance-types/auto";
 import { Health } from "./insurance-types/health";
 import { Mobile } from "./insurance-types/mobile";
 
@@ -12,7 +13,7 @@ const bootstrap = () => {
     console.log(mobilePlan.refundPartialCoverages().assistance());
     console.log(mobilePlan.additionalCoverages().assistance());
 
-    const autoPlan = new Mobile();
+    const autoPlan = new Auto();
     console.log(autoPlan.refundTotalCoverages().assistance());
     console.log(autoPlan.refundPartialCoverages().assistance());
     console.log(autoPlan.additionalCoverages().assistance());
